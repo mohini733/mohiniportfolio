@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-secondary: #ec4899;
+  --color-accent: #06b6d4;
+  --color-bg-dark: #0f172a;
+  --color-bg-darker: #020617;
+  --color-text-light: #f8fafc;
+  --color-text-dim: #94a3b8;
+  
+  --font-main: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-bg-darker)] text-[var(--color-text-light)] font-main overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1200px] mx-auto px-8;
+  }
+  
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary to-secondary;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-20;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-3 px-8 py-3 rounded-full font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary to-secondary text-white shadow-lg shadow-indigo-500/30 hover:-translate-y-1 hover:shadow-xl hover:shadow-indigo-500/40;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-text-light hover:bg-primary hover:text-white hover:-translate-y-1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-bg-darker;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark;
+}
