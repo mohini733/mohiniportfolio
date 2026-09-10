@@ -49,9 +49,14 @@ const About = () => {
                 </p>
               </div>
               <div className="mt-10">
-                <button className="btn btn-primary">
+                <a 
+                  href="https://drive.google.com/file/d/1BdqGbZIJ12Hs2VBOBtm7o5izLTeN0il7/view?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary inline-flex items-center gap-2"
+                >
                   Download Resume <FiDownload />
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>
