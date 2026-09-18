@@ -40,9 +40,9 @@ const ProjectsPage = () => {
     {
       id: 5,
       title: 'To Do List',
-      category: 'API',
-      image: '/img/todolist.avif',
-      live: 'https://to-do-list-ta6r.vercel.app/'
+      category: 'API (React , Nodejs , MongoDB)',
+      image: '/img/todoo.webp',
+      live: 'https://toodoolist-lemon.vercel.app/'
     }
   ];
 
