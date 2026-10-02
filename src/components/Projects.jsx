@@ -35,6 +35,13 @@ const Projects = ({ isSlider = true }) => {
       category: 'UI / Ux',
       image: '/img/notes.avif',
       live: 'https://notes-ashy-eight.vercel.app/'
+    },
+    {
+      id: 5,
+      title: 'Urbanic India',
+      category: 'Full Stack',
+      image: '/img/weddinglogo.jpg',
+      live: 'https://www.urbanicindia.in/'
     }
   ];
 

@@ -43,6 +43,13 @@ const ProjectsPage = () => {
       category: 'API (React , Nodejs , MongoDB)',
       image: '/img/todoo.webp',
       live: 'https://toodoolist-lemon.vercel.app/'
+    },
+    {
+      id: 6,
+      title: 'Urbanic India',
+      category: 'Full Stack',
+      image: '/img/weddinglogo.jpg',
+      live: 'https://www.urbanicindia.in/'
     }
   ];
 
